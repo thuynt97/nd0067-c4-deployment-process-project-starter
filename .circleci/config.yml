@@ -54,6 +54,8 @@ jobs:
       - run:
           name: Deploy App
           command: |
+            echo "Access key id" 
+            echo $AWS_ACCESS_KEY_ID
             npm run frontend:deploy
 
 workflows:
